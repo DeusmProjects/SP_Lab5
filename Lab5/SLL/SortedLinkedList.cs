@@ -17,7 +17,7 @@ namespace Lab5.SLL
                 head = newNode;
             else
             {
-                if (newNode.CompareTo(head) < 0 || newNode.CompareTo(head) == 0)
+                if (newNode.CompareTo(head) <= 0)
                 {
                     InsertBeforeNode(head, newNode);
                 }
