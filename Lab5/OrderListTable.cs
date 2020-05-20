@@ -33,6 +33,8 @@ namespace Lab5
         {
             int hash = HashFunction.Hash(value);
 
+            if (string.IsNullOrEmpty(_table[hash])) return false;
+            
             return _table[hash].Equals(value) || _sll.Contains(value);
         }
     }
