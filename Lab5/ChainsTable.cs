@@ -28,7 +28,7 @@ namespace Lab5
         public bool Contains(string value)
         {
             var hash = HashFunction.Hash(value);
-            return _table[hash].Contains(value);
+            return _table[hash] != null && _table[hash].Contains(value);
         }
     }
 }
